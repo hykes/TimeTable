@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/login_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_top_bg" >
+
+        <TextView
+            android:id="@+id/table_top"
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/main_title"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_addClass"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="+"
+            android:gravity="center"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/login_top_layout"
+        android:orientation="horizontal" >
+
+        <!-- 定义ScrollView，为里面的组件添加垂直滚动条 -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/background" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/login_top_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#00000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="4"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="6"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="7"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="8"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="9"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!-- 定义HorizontalScrollView，为里面的组件添加水平滚动条 -->
+
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/monday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:id="@+id/mondayBtn"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/monday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/tuesday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/tuesday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/wednesday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/wednesday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/thursday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/thursday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/friday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/friday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/saturday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/saturday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sunday"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="3dp"
+                            android:paddingRight="3dp"
+                            android:paddingTop="5dp" >
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#000000"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/sunday"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="2dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

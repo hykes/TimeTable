@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color">
+        <item>白色</item>
+        <item>橙色</item>
+        <item>绿色</item>
+        <item>浅蓝色</item>
+        <item>棕色</item>
+        <item>天蓝色</item>
+        <item>红色</item>
+        <item>灰色</item>
+    </string-array>
+    <string-array name="week">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期天</item>
+    </string-array>
+    <string-array name="classes">
+        <item>第1/2节</item>
+        <item>第3/4节</item>
+        <item>第5/6/7节</item>
+        <item>第8/9/A节</item>
+    </string-array>
+
+</resources>

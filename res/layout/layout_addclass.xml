@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addClass"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/addClass_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/login_top_bg" >
+
+        <TextView
+            android:id="@+id/t_timetable"
+            android:layout_width="40dp"
+            android:layout_height="23dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="&lt;"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="23dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/main_title"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/addClass_teacher"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/addClass_place"
+        android:layout_below="@+id/addClass_place"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_selector"
+        android:ems="10"
+        android:hint="@string/class_teacher"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/addClass_place"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/addClass_course"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/login_selector"
+        android:ems="10"
+        android:hint="@string/class_place"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/addClass_course"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/addClass_place"
+        android:layout_below="@+id/addClass_top_layout"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_selector"
+        android:ems="10"
+        android:hint="@string/class_course"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addClass_teacher"
+        android:layout_marginTop="26dp" >
+
+        <Spinner
+            android:id="@+id/spinner_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/week"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/classes"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/spinner_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/color"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_addClass"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_login_selector"
+        android:text="@string/str_addClass"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
